@@ -13,7 +13,7 @@ body {
 
 article {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -25,7 +25,7 @@ article {
     align-items: center;
     justify-content: start;
     width: 60%;
-    height: 100vh;
+    height: 100%;
 }
 
 .instagram-phone {
@@ -134,6 +134,20 @@ article {
     min-width: 100%;
 }
 
+.instagram-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 24px 0;
+    padding: 0 12px;
+}
+
+.gray-link {
+    color: rgb(142, 142, 142);
+    margin: 0 8px 12px;
+}
+
 /* Media Queries */
 
 @media (max-width: 1024px) {
@@ -143,6 +157,10 @@ article {
 }
 
 @media (max-width: 650px) {
+    article {
+        margin-top: 24px;
+    }
+
     .instagram-wrapper {
         width: 60%;
     }
