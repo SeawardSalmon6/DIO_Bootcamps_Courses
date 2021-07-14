@@ -8,9 +8,12 @@
 }
 
 body {
+    background-color: rgb(243, 243, 243);
+}
+
+article {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
     display: flex;
@@ -41,7 +44,7 @@ body {
     align-items: center;              /* flex-direction: column o ALIGN vira HORIZONTAL */
     justify-content: space-around;    /* flex-direction: column o JUSTIFY vira VERTICAL */
     flex-direction: column;
-    width: 50%;
+    width: 350px;
     min-height: 34rem;
 }
 
@@ -94,6 +97,7 @@ body {
 
 .link-blue {
     color: #0095f6;
+    font-weight: 500;
 }
 
 .get-the-app {
@@ -119,12 +123,15 @@ body {
     background-size: cover;
 }
 
-.app-download:nth-child(1) {
-    background-image: url(images/apple-button.png);
+.app-download:nth-child(1) img {
+    max-height: 40px;
+    min-width: 100%;
+    margin-right: 8px;
 }
 
-.app-download:nth-child(2) {
-    background-image: url(images/googleplay-button.png);
+.app-download:nth-child(2) img {
+    max-height: 40px;
+    min-width: 100%;
 }
 
 /* Media Queries */
@@ -136,12 +143,8 @@ body {
 }
 
 @media (max-width: 650px) {
-    body {
-        background-color: #FFFFFF;
-    }
-    
     .instagram-wrapper {
-        width: 50%;
+        width: 60%;
     }
 
     .instagram-phone {
@@ -151,8 +154,11 @@ body {
     .instagram-continue {
         width: 100%;
     }
+}
 
+@media (max-width: 450px) {
     .block {
         border: 1px solid transparent;
+        background-color: rgb(243, 243, 243);
     }
 }
