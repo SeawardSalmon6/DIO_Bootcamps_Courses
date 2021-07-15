@@ -45,16 +45,24 @@ header .netflix-logo {
 .filme-principal {
     font-size: 16px;
     background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%),
-        url(../images/capa-house.jpg);
-
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%),
+    url(../images/capa-house.jpg);
+    
     height: 400px;
     background-size: cover;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.container {
+    margin-left: 20px;
 }
 
 .filme-principal .descricao-filme {
@@ -69,6 +77,7 @@ header .netflix-logo {
 }
 
 .filme-principal .botao {
+    /* estilização de botões */
     background-color: rgba(0, 0, 0, .5);
     border: none;
     color: white;
@@ -88,4 +97,10 @@ header .netflix-logo {
 
 .botao i {
     margin-right: 8px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
