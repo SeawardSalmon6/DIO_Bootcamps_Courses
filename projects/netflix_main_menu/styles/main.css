@@ -65,15 +65,15 @@ header .netflix-logo {
     margin-left: 20px;
 }
 
-.filme-principal .descricao-filme {
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
 .filme-principal .titulo-filme {
     margin-top: 15%;
     font-size: 70px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .descricao-filme {
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .filme-principal .botao {
@@ -103,4 +103,10 @@ header .netflix-logo {
     height: 100%;
     width: 100%;
     display: block;
+    cursor: pointer;
+}
+
+/* Carousel Adapts */
+.carrossel-filmes {
+    margin-top: 5px;
 }
