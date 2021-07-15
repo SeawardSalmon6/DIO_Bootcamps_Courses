@@ -4,9 +4,22 @@
         flex-direction: column;
     }
 
+    header .netflix-logo {
+        margin-left: 0;
+    }
+
+    .nav-links:last-of-type {
+        margin-right: 0;
+    }
+
     .botao {
         margin-top: 5px;
         width: 300px;
+    }
+
+    .box-filmes {
+        width: 80%;
+        height: 80%;
     }
 }
 

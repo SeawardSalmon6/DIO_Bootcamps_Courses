@@ -17,18 +17,23 @@ body {
 
 /* Navbar Elements */
 
+header {
+    background-color: var(--preta);
+    position: sticky;
+    top: 0;
+}
+
 header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 header .netflix-logo {
-    color: var(--vermelho);
-    font-family: "Arial Black", 'Times New Roman', Times, serif;
-    font-size: 40px;
+    max-width: 110px;
     margin-left: 5px;
+    margin-right: 10px;
 }
 
 .nav-links {
@@ -48,7 +53,7 @@ header .netflix-logo {
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%),
     url(../images/capa-house.jpg);
     
-    height: 400px;
+    height: 500px;
     background-size: cover;
     
     display: flex;
@@ -58,22 +63,47 @@ header .netflix-logo {
 }
 
 .filme-principal .container {
-    width: 70%;
+    width: 90%;
+    margin-left: 5%;
 }
 
-.container {
-    margin-left: 20px;
+.filme-principal .container .descricao {
+    margin-top: 25px;
+    margin-left: 0;
+}
+
+.filme-principal .titulo-logo {
+    margin-top: 5%;
+    width: 50%;
 }
 
 .filme-principal .titulo-filme {
-    margin-top: 15%;
-    font-size: 70px;
+    font-size: 24px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.meta-filme {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+.info-spacer {
+    margin: 0 6px;
+}
+
+.meta-filme .age {
+    border: 1px solid #a1a1a1;
+    padding: 0 3px;
 }
 
 .filme-principal .descricao-filme {
     margin-top: 10px;
     margin-bottom: 40px;
+    line-height: 22px;
 }
 
 .filme-principal .botao {
@@ -108,5 +138,5 @@ header .netflix-logo {
 
 /* Carousel Adapts */
 .carrossel-filmes {
-    margin-top: 5px;
+    margin-top: 25px;
 }

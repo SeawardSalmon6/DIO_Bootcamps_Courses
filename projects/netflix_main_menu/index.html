@@ -20,7 +20,7 @@
     <!-- Navbar Section -->
     <header>
         <div class="container">
-            <h2 class="netflix-logo">NETFLIX</h2>
+            <img class="netflix-logo" src="images/netflix-logo.png">
             <nav>
                 <a class="nav-links" href="#">Início</a>
                 <a class="nav-links" href="#">Séries</a>
@@ -34,17 +34,31 @@
     <main>
         <div class="filme-principal">
             <div class="container">
-                <h3 class="titulo-filme">HOUSE OF CARDS</h3>
-                <p class="descricao-filme">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada que está imperdível.</p>
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fas fa-play"></i>
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
-                    </button>
+                <img class="titulo-logo" src="https://occ-0-331-420.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABdeHqZXDXH-QKBtr_aY7TgHSECBryyP29lOXQWRAn-frrZ0WXTalqeAYPh_e8Fz-YEyhY6XEgab3MXMg-UHQKZcMtUd5s1H183zVNNx60dm2fd8EVA-DGHMgD7WdXA-7p7VTqn81O_blRzF2hlER_zxDCvCbDuImvK-gIGsvCuubHA.png?r=84e" alt="House of Cards">
+                <div class="container descricao">
+                    <h3 class="titulo-filme">HOUSE OF CARDS</h3>
+
+                    <div class="meta-filme">
+                        <span class="meta-info ano">2013</span>
+                        <span class="meta-info info-spacer">|</span>
+                        <span class="meta-info age">18</span>
+                        <span class="meta-info info-spacer">|</span>
+                        <span class="meta-info seasons">6 temporadas</span>
+                        <span class="meta-info info-spacer">|</span>
+                        <span class="meta-info genre">Programas sobre política</span>
+                    </div>
+
+                    <p class="descricao-filme">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada que está imperdível.</p>
+                    <div class="botoes">
+                        <button role="button" onclick="redirectHC()" class="botao">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="botao">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,6 +98,8 @@
             </div>
         </div>
     </section>
+
+    <script src="js/main.js"></script>
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/e9d504f8e2.js" crossorigin="anonymous"></script>
